@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic' rel='stylesheet' type='text/css'/>
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "kids-club" %></title>
+    
+    <%= stylesheet_link_tag "normalize","bootstrap" ,"activite" %>
+    <%= javascript_include_tag  "all" %>
+  </head>
+  
+<body class="<%= page_classes %>"><!--navbar-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">
+            <img src="http://www.logogenie.fr/download/preview/medium/1214550" class="logo"></a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+        </div>
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Programme</a></li>
+            <li><a href="#">Galerie</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="btn btn-default btn-sm navbar-btn">Contacte</a></li>
+        </ul>
+    </div>
+    </div>
+  </nav>
+ 
+    <%= yield %>
+
+    <!--contact-->
+    <div class="container contact">
+        <section class="row">
+            <div class="col-lg-12 logofoot">
+                <p>
+                    <img src="https://www.metro.fr/typo3temp/pics/d/7/66674de491.jpg"/>
+                    <img src="http://www.epo.org/news-issues/social-media/twitter-logo.png?lenya.module=svg&height=50&width=50"/>
+                    <img src="http://nova-web.fr/wp-content/themes/solo/images/mail_logo.png">
+                    mentions légales
+                </p>
+            </div>
+        </section>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <%= javascript_include_tag  "bootstrap.min" %>
+  </body>
+</html>
