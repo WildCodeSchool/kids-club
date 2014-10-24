@@ -9,36 +9,43 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "kids-club" %></title>
     
-    <%= stylesheet_link_tag "normalize","bootstrap" ,"activite" %>
+    <%= stylesheet_link_tag "normalize","bootstrap" ,"global" %>
     <%= javascript_include_tag  "all" %>
   </head>
   
-<body class="<%= page_classes %>"><!--navbar-->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
+<body class="<%= page_classes %>">
+  <header>
+    <!--navbar-->
+    <nav class="navbar navbar-default navbar-fixed-top" id="menu" role="navigation">
+      <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <a href="#" class="navbar-brand">
-            <img src="http://www.logogenie.fr/download/preview/medium/1214550" class="logo"></a>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <img src="https://files.slack.com/files-pri/T02HKC2LQ-F02QRNG48/logo_kids_club.png" id="log" class="logo">
+          </a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
         </div>
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Programme</a></li>
-            <li><a href="#">Galerie</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" class="btn btn-default btn-sm navbar-btn">Contacte</a></li>
-        </ul>
-    </div>
-    </div>
-  </nav>
+
+        <div class="collapse navbar-collapse test1" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+
+            <li><a href="#" class="acceuil" id="prog"><span>P</span>rogramme</a></li>
+            <li><a href="#" class="acceuil" id="prog1"><span>G</span>alerie</a></li>
+        
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/submit_new_project/" class="btn btn-default btn-sm navbar-btn"><strong>Contactez-nous</strong></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
  
     <%= yield %>
 
