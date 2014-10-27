@@ -188,6 +188,7 @@ body
 {
 	background-image: url('http://wallfoy.com/wp-content/uploads/2014/03/Green-Background-83.jpg');
   	background-size: 100%;
+
 }
 
 #Kid
@@ -272,3 +273,13 @@ color:#C96B00
 	background-image: url('https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Ffond-floral-vert-clair-6712744.jpg&f=1');
 }
 
+
+label
+{
+	width: 130px;
+}
+
+/*.message {text-align:left;
+          height: 150px;
+          width: 400px;}
+*/
