@@ -23,14 +23,28 @@
 	margin-top:7px;
 }
 
-li #prog
+#prog {
+	padding-top: 50px;
+}
+#prog li
 {
 	color:#24334C;
 }
 
-li #prog1
+#prog1 li
 {
 	color:#24334C;
+}
+
+#prese
+{
+	
+	height:350px;
+	width:600px;
+	margin-left: auto;
+	margin-right: auto;
+	color:#24334C;	
+
 }
 
 .navbar-brand 
@@ -257,3 +271,4 @@ color:#C96B00
 .test1  {
 	background-image: url('https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Ffond-floral-vert-clair-6712744.jpg&f=1');
 }
+
