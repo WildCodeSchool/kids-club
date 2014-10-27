@@ -129,23 +129,23 @@ button.btn.btn-default {
 }
 @font-face {
 	font-family: "Champagne";
-	src: url('Champagne.ttf');
+	src: url('font/Champagne.ttf');
 	
 }
 @font-face {
 	font-family: "Champagne italic";
 	font-style: italic;
-	src: url('Champagne Italic.ttf');
+	src: url('font/Champagne Italic.ttf');
 }
 @font-face {
 	font-family: "Champagne bold";
 	font-weight: bold;
-	src: url('Champagne Bold.ttf');
+	src: url('font/ChampagneBold.ttf');
 }
 @font-face {
 	font-family: "Champagne bold italic";
 	font-weight: bold, italic;
-	src: url('Champagne Bold Italic.ttf');
+	src: url('font/Champagne Bold Italic.ttf');
 }
 /**{
 font-family: 'Open Sans', sans-serif;
@@ -188,7 +188,6 @@ body
 {
 	background-image: url('http://wallfoy.com/wp-content/uploads/2014/03/Green-Background-83.jpg');
   	background-size: 100%;
-
 }
 
 #Kid
@@ -273,6 +272,19 @@ color:#C96B00
 	background-image: url('https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Ffond-floral-vert-clair-6712744.jpg&f=1');
 }
 
+body {
+        background-color:  #F0F0F0
+;
+}
+#nav{
+    margin-left: 90px;
+}#txthead h2 {
+    text-align: center;
+    color: rgba(72, 114, 240, 0.6);
+    font-size: 70px;
+    margin-top: 100px;
+    font-family: 'Chewy', cursive;
+}
 
 label
 {
@@ -283,3 +295,23 @@ label
           height: 150px;
           width: 400px;}
 */
+#center
+{
+	text-align:center;
+}
+
+#headcaro
+{
+    margin-top: 70px;
+}
+
+.item
+{
+	text-align:center;
+	margin-left:39.25%;
+}
+
+#headcolorac
+{
+    background-color: #18C470;
+}
