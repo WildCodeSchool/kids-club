@@ -9,8 +9,8 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "kids-club" %></title>
     
-    <%= stylesheet_link_tag "normalize","bootstrap" ,"global" %>
-    <%= javascript_include_tag  "all" %>
+    <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" ,"global" %>
+    <%= javascript_include_tag  "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js", "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" %>
   </head>
   
 <body class="<%= page_classes %>">
